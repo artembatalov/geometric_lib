@@ -21,9 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
 
-      - name: Add project to PYTHONPATH
-        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
-
       - name: Run tests
         run: pytest -q
 
@@ -44,9 +41,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # если есть
           pip install pytest
-
-      - name: Add project to PYTHONPATH
-        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
         
       - name: Run tests
         run: pytest -q
