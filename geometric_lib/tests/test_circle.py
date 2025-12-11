@@ -1,4 +1,4 @@
-from circle import area, perimeter
+from geometric_lib.circle import area, perimeter
 import unittest
 
 class CirlceTestCase(unittest.TestCase):
