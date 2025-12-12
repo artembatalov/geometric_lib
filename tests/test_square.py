@@ -19,3 +19,15 @@ class SquareTestCase(unittest.TestCase):
         res2 = perimeter(100000000)
         self.assertEqual(res1, 100000000000000000000)
         self.assertEqual(res2, 400000000)
+    
+    def test_negative_numbers(self):
+        with self.assertRaises(ValueError):
+            area(-1)
+    
+    def test_invalid_input_none(self):
+        with self.assertRaises(TypeError):
+            area(None)
+
+    def test_invalid_input_str(self):
+        with self.assertRaises(TypeError):
+            area("12")

@@ -25,3 +25,15 @@ class RectangleTestCase(unittest.TestCase):
         res2 = perimeter(10000000000, 100000000)
         self.assertEqual(res1, 1000000000000000000)
         self.assertEqual(res2, 20200000000)
+
+    def test_negative_numbers(self):
+        with self.assertRaises(ValueError):
+            area(-1, 5)
+    
+    def test_invalid_input_none(self):
+        with self.assertRaises(TypeError):
+            area(None, 5)
+
+    def test_invalid_input_str(self):
+        with self.assertRaises(TypeError):
+            area("12", "12")

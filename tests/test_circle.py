@@ -19,3 +19,15 @@ class CirlceTestCase(unittest.TestCase):
         res2 = perimeter(100)
         self.assertEqual(res1, 3.1415926535897933e+20)
         self.assertEqual(res2, 628.3185307179587)
+    
+    def test_negative_numbers(self):
+        with self.assertRaises(ValueError):
+            area(-1)
+    
+    def test_invalid_input_none(self):
+        with self.assertRaises(TypeError):
+            area(None)
+
+    def test_invalid_input_str(self):
+        with self.assertRaises(TypeError):
+            area("12")
