@@ -23,11 +23,14 @@ class SquareTestCase(unittest.TestCase):
     def test_negative_numbers(self):
         with self.assertRaises(ValueError):
             area(-1)
+            perimeter(-1)
     
     def test_invalid_input_none(self):
         with self.assertRaises(TypeError):
             area(None)
+            perimeter(None)
 
     def test_invalid_input_str(self):
         with self.assertRaises(TypeError):
             area("12")
+            perimeter("12")

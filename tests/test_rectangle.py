@@ -29,11 +29,15 @@ class RectangleTestCase(unittest.TestCase):
     def test_negative_numbers(self):
         with self.assertRaises(ValueError):
             area(-1, 5)
+            perimeter(-1, 5)
     
     def test_invalid_input_none(self):
         with self.assertRaises(TypeError):
             area(None, 5)
+            perimeter(None, 5)
 
     def test_invalid_input_str(self):
         with self.assertRaises(TypeError):
             area("12", "12")
+            perimeter("12", "12")
+    

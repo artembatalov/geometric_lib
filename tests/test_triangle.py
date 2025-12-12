@@ -23,11 +23,14 @@ class TriangleTestCase(unittest.TestCase):
     def test_negative_numbers(self):
         with self.assertRaises(ValueError):
             area(-1, 5)
+            perimeter(-1, 5. -1)
     
     def test_invalid_input_none(self):
         with self.assertRaises(TypeError):
             area(None, 5)
+            perimeter(5, 4, None)
 
     def test_invalid_input_str(self):
         with self.assertRaises(TypeError):
             area("12", "12")
+            perimeter("12", "12", "1")
