@@ -37,30 +37,4 @@ geometric_lib — мини-библиотека с реализацией гео
 
 # Актуальные результаты тестирования
 
-python3 -m unittest tests/test_rectangle.py
-...
-Ran 4 tests in 0.000s
-
-OK
-
-python3 -m unittest tests/test_triangle.py
-...
-Ran 3 tests in 0.000s
-
-OK
-
-
-python3 -m unittest tests/test_square.py
-...
-Ran 3 tests in 0.000s
-
-OK
-
-
-python3 -m unittest tests/test_circle.py
-...
-Ran 3 tests in 0.000s
-
-OK
-
-**Все тесты были пройдены!**
+**Пройдены не все тесты, требуется исправления!**
